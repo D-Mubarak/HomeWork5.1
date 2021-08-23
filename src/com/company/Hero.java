@@ -3,14 +3,18 @@ package com.company;
 public class Hero {
     private int Health;
     private int Damage;
-    private String heroesAttackType;
+    private String HeroesAttackType;
 
     public Hero(int health, int damage, String heroesAttackType) {
         Health = health;
         Damage = damage;
-        heroesAttackType = heroesAttackType;
+        HeroesAttackType = heroesAttackType;
     }
 
+    public void onlyHealthAndDamage(int health, int damage) {
+        Health = health;
+        Damage = damage;
+    }
 
     public int getHealth() {
         return Health;
@@ -21,6 +25,6 @@ public class Hero {
     }
 
     public String getHeroesAttackType() {
-        return heroesAttackType;
+        return HeroesAttackType;
     }
 }
